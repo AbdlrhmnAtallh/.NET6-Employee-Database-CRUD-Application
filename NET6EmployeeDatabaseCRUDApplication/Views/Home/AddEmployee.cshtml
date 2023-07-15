@@ -1,2 +1,36 @@
 ﻿
-<h3>You can Add a new Employee here</h3>
+@model Employee
+
+<form>
+    <label asp-for="Id"></label>
+    <input asp-for="Id" readonly />
+
+    <label asp-for="EmployeeNo"></label>
+    <input asp-for="EmployeeNo"  />
+
+    <label asp-for="Name"></label>
+    <input asp-for="Name" />
+
+    <label asp-for="DOB"></label>
+    <input asp-for="DOB" />
+
+    <label asp-for="HiringDate"></label>
+    <input asp-for="HiringDate" />
+
+    <label asp-for="GrossSalary"></label>
+    <input asp-for="GrossSalary" />
+
+    <label asp-for="NetSalary"></label>
+    <input asp-for="NetSalary" />
+
+    <label asp-for="DepartmentId" asp-items="@(new SelectList(ViewBag.Depardments,"DepartmentId","DepartmentName"))"></label>
+        <option value="">
+            Select Department
+        </option>
+
+        <input type="submit" value="save" />
+    
+
+
+
+</form>
