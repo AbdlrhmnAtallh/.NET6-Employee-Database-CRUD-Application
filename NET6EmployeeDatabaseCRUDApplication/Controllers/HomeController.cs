@@ -6,6 +6,8 @@ namespace NET6EmployeeDatabaseCRUDApplication.Controllers
 {
     public class HomeController : Controller
     {
+        HRDatabaseContext dbContext = new HRDatabaseContext();
+        
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -15,15 +17,19 @@ namespace NET6EmployeeDatabaseCRUDApplication.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View ();
+            
         }
         public IActionResult AddEmployee()
         {
+            ViewBag.Departments = this.dbContext.Departments.ToList();
             return View();
         }
 
+
         public IActionResult Privacy()
         {
+
             return View();
         }
 

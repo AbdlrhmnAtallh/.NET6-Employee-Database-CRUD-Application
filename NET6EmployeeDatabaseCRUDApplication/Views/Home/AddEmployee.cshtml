@@ -1,36 +1,31 @@
-﻿
-@model Employee
-
-<form>
+﻿@model Employee
+<form class="container">
     <label asp-for="Id"></label>
-    <input asp-for="Id" readonly />
+    <input asp-for="Id" readonly class="form-control" />
 
     <label asp-for="EmployeeNo"></label>
-    <input asp-for="EmployeeNo"  />
+    <input asp-for="EmployeeNo" class="form-control" />
 
     <label asp-for="Name"></label>
-    <input asp-for="Name" />
+    <input asp-for="Name" class="form-control" />
 
-    <label asp-for="DOB"></label>
-    <input asp-for="DOB" />
+    <label asp-for="DOB" class="col-form-label"></label>
+    <input asp-for="DOB" class="form-control" />
 
     <label asp-for="HiringDate"></label>
-    <input asp-for="HiringDate" />
+    <input asp-for="HiringDate" class="form-control" />
 
     <label asp-for="GrossSalary"></label>
-    <input asp-for="GrossSalary" />
+    <input asp-for="GrossSalary" class="form-control" />
 
     <label asp-for="NetSalary"></label>
-    <input asp-for="NetSalary" />
-
-    <label asp-for="DepartmentId" asp-items="@(new SelectList(ViewBag.Depardments,"DepartmentId","DepartmentName"))"></label>
+    <input asp-for="NetSalary" class="form-control" />
+    <label asp-for="DepartmentId"></label>
+    <select asp-for="DepartmentId" asp-items="@(new SelectList(ViewBag.Departments,"DepartmentId","DepartmentName"))" class="form-control">
         <option value="">
             Select Department
         </option>
+    </select>
 
-        <input type="submit" value="save" />
-    
-
-
-
+    <input type="submit" value="save" class="btn btn-primary" />
 </form>
