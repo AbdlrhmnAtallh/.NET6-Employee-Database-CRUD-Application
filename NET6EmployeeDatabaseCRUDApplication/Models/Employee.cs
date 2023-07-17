@@ -16,7 +16,7 @@ namespace NET6EmployeeDatabaseCRUDApplication.Models
         [Column(TypeName = "varchar(15)")]
         [MaxLength(15)]
         [Display(Name = "Employee No.")]
-        public int EmployeeNo { get; set; }
+        public string EmployeeNo { get; set; }
 
         [Column(TypeName = "varchar(80)")]
         [MaxLength(80)]

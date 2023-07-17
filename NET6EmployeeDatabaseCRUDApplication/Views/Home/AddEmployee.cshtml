@@ -1,31 +1,46 @@
 ﻿@model Employee
-<form class="container">
-    <label asp-for="Id"></label>
-    <input asp-for="Id" readonly class="form-control" />
+@{
+    TempData["Title"] ="AddEmployee";
+}
+<h3> @TempData["Title"] Employee. </h3>
+<form asp-action=@TempData["Title"]>
+    <div asp-validation-summary="All"></div>
 
-    <label asp-for="EmployeeNo"></label>
+    <label asp-for="Id" class="control-label"></label>
+    <input asp-for="Id" class="form-control" readonly />
+
+    <label asp-for="EmployeeNo" class="control-label"></label>
     <input asp-for="EmployeeNo" class="form-control" />
 
-    <label asp-for="Name"></label>
+    <label asp-for="Name" class="control-label"></label>
     <input asp-for="Name" class="form-control" />
 
-    <label asp-for="DOB" class="col-form-label"></label>
+    <label asp-for="DOB" class="control-label"></label>
     <input asp-for="DOB" class="form-control" />
 
-    <label asp-for="HiringDate"></label>
+    <label asp-for="HiringDate" class="control-label"></label>
     <input asp-for="HiringDate" class="form-control" />
 
-    <label asp-for="GrossSalary"></label>
+    <label asp-for="GrossSalary" class="control-label"></label>
     <input asp-for="GrossSalary" class="form-control" />
 
-    <label asp-for="NetSalary"></label>
+    <label asp-for="NetSalary" class="control-label"></label>
     <input asp-for="NetSalary" class="form-control" />
-    <label asp-for="DepartmentId"></label>
+
+    <label asp-for="DepartmentId" class="control-label"></label>
     <select asp-for="DepartmentId" asp-items="@(new SelectList(ViewBag.Departments,"DepartmentId","DepartmentName"))" class="form-control">
         <option value="">
             Select Department
         </option>
     </select>
-
     <input type="submit" value="save" class="btn btn-primary" />
+    <a asp-action="Index" class="btn btn-secondary">Cansel</a>
 </form>
+@section scripts{
+
+    <partial name="_ValidationScriptsPartial" />
+}
+
+
+
+

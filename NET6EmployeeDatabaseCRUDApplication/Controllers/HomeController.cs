@@ -26,6 +26,30 @@ namespace NET6EmployeeDatabaseCRUDApplication.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult AddEmployee(Employee model)
+        {
+            ModelState.Remove("Id");
+            ModelState.Remove("Department");
+            ModelState.Remove("DepartmentName");
+            if (ModelState.IsValid)
+            {
+                dbContext.Employees.Add(model);
+                dbContext.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            ViewBag.Departments = this.dbContext.Departments.ToList();
+            return View();
+                
+        }
+
+        public IActionResult ShowEmployeeData()
+        {
+            var employee = this.dbContext.Employees.ToList();
+            return View(employee);
+        }
+
+
 
         public IActionResult Privacy()
         {
