@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mFpIDT9IbrDNvd82tXgyRh2eOzIfFuHxfFYhw+HAaFU=",
+  "Hash": "ePRB5Qw0tCcUp9exkxKCu9tB7uabtEncHizuJrO5qX4=",
   "Source": "NET6EmployeeDatabaseCRUDApplication",
   "BasePath": "_content/NET6EmployeeDatabaseCRUDApplication",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "F:\\Work_Space\\ASP.Net_Core\\NET6EmployeeDatabaseCRUDApplication\\NET6EmployeeDatabaseCRUDApplication\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\NET6EmployeeDatabaseCRUDApplication.bundle.scp.css"
+    },
+    {
+      "Identity": "F:\\Work_Space\\ASP.Net_Core\\NET6EmployeeDatabaseCRUDApplication\\NET6EmployeeDatabaseCRUDApplication\\wwwroot\\css\\ShowEmployeeData.css",
+      "SourceId": "NET6EmployeeDatabaseCRUDApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Work_Space\\ASP.Net_Core\\NET6EmployeeDatabaseCRUDApplication\\NET6EmployeeDatabaseCRUDApplication\\wwwroot\\",
+      "BasePath": "_content/NET6EmployeeDatabaseCRUDApplication",
+      "RelativePath": "css/ShowEmployeeData.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\ShowEmployeeData.css"
     },
     {
       "Identity": "F:\\Work_Space\\ASP.Net_Core\\NET6EmployeeDatabaseCRUDApplication\\NET6EmployeeDatabaseCRUDApplication\\wwwroot\\css\\site.css",
