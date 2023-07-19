@@ -56,7 +56,10 @@ namespace NET6EmployeeDatabaseCRUDApplication.Models
 
         public virtual Department Department { get; set; }
 
+        public string? ImagePath { get; set; }
 
+        [NotMapped]
+        public IFormFile? ClientFile { get; set; }
 
     }
 }

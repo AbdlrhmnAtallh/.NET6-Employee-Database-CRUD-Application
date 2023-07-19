@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\NET6EmployeeDatabaseCRUDApplication.bundle.scp.css"
     },
     {
+      "Id": "F:\\Work_Space\\ASP.Net_Core\\NET6EmployeeDatabaseCRUDApplication\\NET6EmployeeDatabaseCRUDApplication\\wwwroot\\Images\\downloadFor Snake .png",
+      "PackagePath": "staticwebassets\\Images\\downloadFor Snake .png"
+    },
+    {
       "Id": "F:\\Work_Space\\ASP.Net_Core\\NET6EmployeeDatabaseCRUDApplication\\NET6EmployeeDatabaseCRUDApplication\\wwwroot\\css\\ShowEmployeeData.css",
       "PackagePath": "staticwebassets\\css\\ShowEmployeeData.css"
     },

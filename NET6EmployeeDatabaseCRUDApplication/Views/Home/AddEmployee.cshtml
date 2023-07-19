@@ -8,7 +8,7 @@
      TempData["Title"] ="EditEmployee";
 }
 <h3> @TempData["Title"] Employee. </h3>
-<form asp-action=@TempData["Title"]>
+<form asp-action=@TempData["Title"] enctype="multipart/form-data">
     <div asp-validation-summary="All"></div>
 
     <label asp-for="Id" class="control-label"></label>
@@ -38,8 +38,13 @@
             Select Department
         </option>
     </select>
+    <div>
+        @*<label>Add Photo</label>*@
+        <input type="file" asp-for="ClientFile" />
+    </div>
     <input type="submit" value="save" class="btn btn-primary" />
     <a asp-action="Index" class="btn btn-secondary">Cansel</a>
+    <partial name="_ValidationScriptsPartial" />
 </form>
 @*
 @section scripts{

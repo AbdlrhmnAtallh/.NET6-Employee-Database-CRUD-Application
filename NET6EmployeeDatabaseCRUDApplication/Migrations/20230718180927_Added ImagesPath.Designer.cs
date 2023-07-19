@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NET6EmployeeDatabaseCRUDApplication.Models;
 
@@ -11,9 +12,11 @@ using NET6EmployeeDatabaseCRUDApplication.Models;
 namespace NET6EmployeeDatabaseCRUDApplication.Migrations
 {
     [DbContext(typeof(HRDatabaseContext))]
-    partial class HRDatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20230718180927_Added ImagesPath")]
+    partial class AddedImagesPath
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
