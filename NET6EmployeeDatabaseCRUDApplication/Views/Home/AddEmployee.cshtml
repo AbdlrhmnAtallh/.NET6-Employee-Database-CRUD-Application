@@ -39,16 +39,16 @@
         </option>
     </select>
     <div>
-        @*<label>Add Photo</label>*@
-        <input type="file" asp-for="ClientFile" />
+          <label asp-for="ClientFile" class="control-label"> I</label>
+          <input type="file" asp-for="ClientFile" class="form-control" />    
     </div>
+        <br />
     <input type="submit" value="save" class="btn btn-primary" />
     <a asp-action="Index" class="btn btn-secondary">Cansel</a>
-    <partial name="_ValidationScriptsPartial" />
+    
 </form>
 @*
 @section scripts{
-
     <partial name="_ValidationScriptsPartial" />
 }
 *@

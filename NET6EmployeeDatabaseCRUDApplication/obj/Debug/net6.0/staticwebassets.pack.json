@@ -5,8 +5,28 @@
       "PackagePath": "staticwebassets\\NET6EmployeeDatabaseCRUDApplication.bundle.scp.css"
     },
     {
-      "Id": "F:\\Work_Space\\ASP.Net_Core\\NET6EmployeeDatabaseCRUDApplication\\NET6EmployeeDatabaseCRUDApplication\\wwwroot\\Images\\downloadFor Snake .png",
-      "PackagePath": "staticwebassets\\Images\\downloadFor Snake .png"
+      "Id": "F:\\Work_Space\\ASP.Net_Core\\NET6EmployeeDatabaseCRUDApplication\\NET6EmployeeDatabaseCRUDApplication\\wwwroot\\Images\\Default.png",
+      "PackagePath": "staticwebassets\\Images\\Default.png"
+    },
+    {
+      "Id": "F:\\Work_Space\\ASP.Net_Core\\NET6EmployeeDatabaseCRUDApplication\\NET6EmployeeDatabaseCRUDApplication\\wwwroot\\Images\\IMG-20230505-WA0004.jpg",
+      "PackagePath": "staticwebassets\\Images\\IMG-20230505-WA0004.jpg"
+    },
+    {
+      "Id": "F:\\Work_Space\\ASP.Net_Core\\NET6EmployeeDatabaseCRUDApplication\\NET6EmployeeDatabaseCRUDApplication\\wwwroot\\Images\\MainPic.png",
+      "PackagePath": "staticwebassets\\Images\\MainPic.png"
+    },
+    {
+      "Id": "F:\\Work_Space\\ASP.Net_Core\\NET6EmployeeDatabaseCRUDApplication\\NET6EmployeeDatabaseCRUDApplication\\wwwroot\\Images\\Snake .png",
+      "PackagePath": "staticwebassets\\Images\\Snake .png"
+    },
+    {
+      "Id": "F:\\Work_Space\\ASP.Net_Core\\NET6EmployeeDatabaseCRUDApplication\\NET6EmployeeDatabaseCRUDApplication\\wwwroot\\Images\\Snake.png",
+      "PackagePath": "staticwebassets\\Images\\Snake.png"
+    },
+    {
+      "Id": "F:\\Work_Space\\ASP.Net_Core\\NET6EmployeeDatabaseCRUDApplication\\NET6EmployeeDatabaseCRUDApplication\\wwwroot\\Images\\japan-g3a009919f_1920.jpg",
+      "PackagePath": "staticwebassets\\Images\\japan-g3a009919f_1920.jpg"
     },
     {
       "Id": "F:\\Work_Space\\ASP.Net_Core\\NET6EmployeeDatabaseCRUDApplication\\NET6EmployeeDatabaseCRUDApplication\\wwwroot\\css\\ShowEmployeeData.css",

@@ -34,6 +34,7 @@ namespace NET6EmployeeDatabaseCRUDApplication.Controllers
             ModelState.Remove("Id");
             ModelState.Remove("Department");
             ModelState.Remove("DepartmentName");
+            
             if (ModelState.IsValid)
             {
                 string fileName = string.Empty;

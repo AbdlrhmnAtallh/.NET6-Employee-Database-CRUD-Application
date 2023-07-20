@@ -18,8 +18,8 @@
             <th>#</th>
             <th>@Html.DisplayNameFor(model=>model.Id)</th>
             <th>@Html.DisplayNameFor(model=>model.EmployeeNo)</th>
-            <th>@Html.DisplayNameFor(model=>model.DepartmentName)</th>
             <th>@Html.DisplayNameFor(model=>model.Name)</th>
+            <th>@Html.DisplayNameFor(model=>model.DepartmentName)</th>
             <th>@Html.DisplayNameFor(model=>model.DOB)</th>
             <th>@Html.DisplayNameFor(model=>model.HiringDate)</th>
             <th>@Html.DisplayNameFor(model=>model.GrossSalary)</th>
@@ -38,17 +38,16 @@
                 <td>
                     @if (item.ImagePath!=null)
                     {
-                        <img src="~/Images/@item.ImagePath" style="width:50px;height:50px">
+                        <img src="~/Images/@item.ImagePath" style="width:50px;height:50px;border-radius:50%">
                     }
                     else
                     {
-                        <img src="~/Images/Default.png" style="width:40px;height:40px">
+                        <img src="~/Images/Default.png" style="width:40px;height:40px; border-radius:50%;">
                     }
                 </td>
                 <td>@Html.DisplayFor(modelitem=>item.Id)</td>
                 <td>@Html.DisplayFor(modelitem=>item.EmployeeNo)</td>
                 <td>@Html.DisplayFor(modelitem=>item.Name)</td>
-                
                 <td>@Html.DisplayFor(modelitem=> item.DepartmentName)</td>
                 <td>@Html.DisplayFor(modelitem=>item.DOB)</td>
                 <td>@Html.DisplayFor(modelitem=>item.HiringDate)</td>
